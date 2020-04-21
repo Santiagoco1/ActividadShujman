@@ -1,49 +1,29 @@
-
-header{
+header {
     display: flex;
     position: sticky;
     top: 0;
     z-index: 1;
 }
 
-.header-image-container {
-    display: flex;
-    align-items: center;
-    justify-content: left;
+a {
+    text-decoration: none;
 }
 
-.header-options ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.header-options ul li {
-    font-size: large;
-    list-style: none;
-    text-align: center;
-    margin: 15px;
-}
-
-.header-options ul li:hover {
+a:hover {
     color: white;
-    cursor: pointer;
 }
 
-.header-dark-mode {
+.header-links {
     display: flex;
     align-items: center;
-    justify-content: right;
 }
 
-.header-dark-mode button{
-    margin: 10px;
+.dark-mode{
+    margin-left: 50px;
 }
 
-.header-dropdown {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.dropdown {
+    margin-left: 50px;
 }
 
 main {
@@ -53,8 +33,53 @@ main {
     margin-left: 0px;
 }
 
-.card {
-    z-index: 1;
+@media (max-width: 1066px) {
+    header {
+        font-size: 14px;
+    }
+    .dark-mode{
+        margin-left: 9px;
+    }
+    
+    .dropdown {
+        margin-left: 9px;
+    }
+}
+
+@media (max-width: 1023px) {
+    header {
+        font-size: 10px;
+    }
+    .dark-mode{
+        margin-left: 0;
+    }
+    
+    .dropdown {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 600px){
+    header {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 500px),
+(max-width: 800px) {
+  #DivTituloSmall {
+    display: none;
+  }
+
+  #Logo {
+    width: 100px;
+  }
+
+  #Card {
+    min-width: 350px;
+    width: 80%;
+    margin: 5% 10% 5% 10%;
+  }
 }
 
 .footer {
