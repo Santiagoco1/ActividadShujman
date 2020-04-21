@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Actividad Dos - Schujman</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel =" stylesheet " type = " text/css " href ="css/styles.css" media =" screen ">
+    <script src = "scripts/script.js"> </script> 
+</head>
+
+<body>
+    <header class="w3-container w3-gray" style="height:120px;">
+        <div class="header-image-container w3-container w3-cold" style="width:20%;">
+            <a href="https://ips.edu.ar/">
+                <img class="w3-bar-item w3-left w3-center" id="logo" src="images/IPS_Logo.png" style="height: 100px" alt="Logo IPS">
+            </a>
+        </div>
+        <div class="header-options w3-cold" style="width: 60%">
+            <ul class="w3-container" style="height: 90px ">
+                <li class="w3-hide-small w3-margin-32">Actividades</li>
+                <li class="w3-hide-small w3-padding-32">Preguntas Frecuentes</li>
+                <li class="w3-hide-small w3-padding-32">Iniciar Sesión</li>
+                <li class="w3-hide-small w3-padding-32">Registrarme</li>
+            </ul>
+        </div>
+
+        <div class="w3-caontainer header-dropdown w3-cold" style="height: 120px; width:10%">
+            <div class="w3-bar w3-gray">
+                <div class="w3-dropdown-hover">
+                    <button class="w3-button">Dropdown</button>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="https://www.google.com/" target="_blank" class="w3-bar-item w3-button">Link 1</a>
+                        <a href="https://www.youtube.com/watch?v=5qap5aO4i9A" target="_blank" class="w3-bar-item w3-button">Link 2</a>
+                        <a href="https://ar.pinterest.com/jconsolati/j/" target="_blank" class="w3-bar-item w3-button">Link 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-dark-mode w3-cold w3-hide-small" style="height: 120px width:10%">
+            Dark Mode:
+            <button>OFF</button>
+        </div>
+    </header>
+ 
+    <main>
+        <!-- Cards con modal-->
+            <div class="w3-container">
+                <div class=" card w3-third">
+                    <div class="w3-card-4 " style="width:70%;">
+                    <!--Aca empieza el modal-->
+                    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button"><img src="images/Vendrick.png" style="width:100%"></button>
+                        <div id="id01" class="w3-modal">
+                            <div class="w3-modal-content">
+                                <div class="w3-container">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                    <p>Franco Inutil. Julienta tontisima, de parte del inutil.</p>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- Aca termina el modal-->
+                        <div class="w3-container w3-center">
+                            <p>Esto va a funcionar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-third">
+                    <div class="w3-card-4 " style="width:80%;">
+                        <header class="w3-container w3-gray">
+                            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button"><p>Header</p></button>
+                            <div id="id01" class="w3-modal">
+                                <div class="w3-modal-content">
+                                    <div class="w3-container">
+                                        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                        <p>Franco Inutil. Julienta tontisima, de parte del inutil.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="w3-container">
+                            <p>Esto va a andar si o si bro.</p>
+                        </div>
+                        <footer class="w3-container w3-gray">
+                            <p>Footer</p>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+    <footer class = "footer"> 
+        <li>Co Santiago</li>
+        <li>Consolati Juliana</li>
+        <li>Gozzerino Franco</li>
+    </footer>
+
+</body>
+</html>
