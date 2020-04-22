@@ -1,16 +1,99 @@
-header {
-    display: flex;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+/* Color Theme Swatches in Hex */
+.pagina-1-hex { color: #000000; }
+.pagina-2-hex { color: #E6BC0E; }
+.pagina-3-hex { color: #36827F; }
+.pagina-4-hex { color: #FDFBFB; }
+.pagina-5-hex { color: #95190C; }
+
+body{
+    background-color:#fdfbfb;
+    font-family: 'Roboto', sans-serif; 
 }
 
-a {
+.switch {
+    position: relative;
+    border-radius: 34px;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    border-radius: 34px;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(167, 135, 10);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #FDFBFB;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #303030;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #303030;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+.button {
+    color: #dcd9d2;
+    border: 3px solid #95190C;
+    border-radius: 8px;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 15px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color: #95190c;
+    color: white;   
+  }
+
+  .button1:hover {
+    background-color: #dcd9d2; 
+    color: black; 
+    border: 3px solid #95190C;
+  }
+
+a{
+    color: #3d3d3d;
     text-decoration: none;
 }
 
-a:hover {
-    color: white;
+p{
+    color: black;
 }
 
 .header-links {
@@ -19,15 +102,19 @@ a:hover {
 }
 
 .dark-mode{
+    display: flex;
+    align-items: right;
+    color: black;
     margin-left: 50px;
 }
 
 .dropdown {
+    color: #3d3d3d;
     margin-left: 50px;
 }
 
 main {
-    margin-top: 20px;
+    margin-top: 100px;
     margin-bottom: 70px;
     margin-right: 0px;
     margin-left: 0px;
@@ -78,7 +165,7 @@ main {
   #Card {
     min-width: 350px;
     width: 80%;
-    margin: 5% 10% 5% 10%;
+    margin: 5% 0% 5% 10%;
   }
 }
 
@@ -88,8 +175,8 @@ main {
     bottom: 0;
     height: 50px;
     width: 100%;
-    background-color: rgb(31, 31, 31);
-    color: grey;
+    background-color: rgba(31, 31, 31, 0.678);
+    color: darkgrey;
     display: flex;
     align-items: center;
     justify-content: center;
