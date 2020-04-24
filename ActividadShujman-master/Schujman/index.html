@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    
     <meta charset = "UTF-8">
     <meta name = "viewport" content = "width=device-width, initial-scale=1">
     <title>Actividad Dos - Schujman</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel ="stylesheet" type = " text/css " href ="css/styles.css" media =" screen ">
-    <script src = "scripts/script.js"> </script> 
+    <script src = "script.js"> </script> 
 </head>
-
 <body>
     <header class="w3-top">
         <div class="header-links w3-bar" style="background-color: #e4bf2e;">
@@ -67,12 +65,9 @@
             </div>
         </div>
     </header>
-    
     <main>
-    <!-- Card 2001-->
-    <div class="w3-mobile w3-container w3-cold" style="width: 100%">
-        <div class="w3-third">
-            <div class="w3-card-4 " style="width:70%; background-color: #dcd9d2;" id = "Card">
+        <section class="cards-container w3-container" style="width: 1400px;">
+            <div class="card w3-card-4" style="background-color: #dcd9d2;" id = "Card"> <!-- Card 2001-->
                 <img src="images/2001.jpg" style="width:100%">
                 <div class="w3-container w3-center">
                     <button onclick="document.getElementById('id01').style.display='block'" class="button button1">Mas Informacion</button>
@@ -91,191 +86,107 @@
                     </div>          
                 </div>
             </div>
-        </div>
-    <!-- Card Godfather-->
-        <div class="card w3-third">
-            <div class="w3-card-4" style="width:80%;" id = "Card">
-                <div class="w3-container" style="background-color:  #36827F;">
-                    <h3>The Godfather (1972)</h3>
-                </div>
-                <div class="w3-container">
-                    <p> El Padrino detalla la historia de una familia de la mafia con sede en la ciudad de Nueva York, encabezada por Don Vito Corleone, quien se convertiría en sinónimo de la mafia italiana. La novela cubre los años 1945-1955, y también proporciona la historia posterior de Vito Corleone desde la primera infancia hasta la edad adulta. </p>
-                    <p> El libro introduce términos criminales italianos como consigliere, caporegime, Cosa Nostra, y omertà a una audiencia de habla Inglesa.</p>
-                </div>
-                <footer class="w3-container" style="background-color: #36827F;">
-                    <button  onclick="document.getElementById('id02').style.display='block'" class="w3-button">Mas Informacion</button>
-                    <div id="id02" class="w3-modal">
+            <div class="card w3-card-4" style="background-color: #dcd9d2;" id = "Card"> <!-- Card 2001-->
+                <img src="images/2001.jpg" style="width:100%">
+                <div class="w3-container w3-center">
+                    <button onclick="document.getElementById('id01').style.display='block'" class="button button1">Mas Informacion</button>
+                    <div id="id01" class="w3-modal">
                         <div class="w3-modal-content">
                             <div class="w3-container">
-                                <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                                <p>
-                                    Título original: The godfather
-                                    Dirección: Francis Ford Coppola
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-            </div>
-        </div>
-        <!-- Card Back to the future-->
-        <div class="card w3-third">
-            <div class="w3-card-4 " style="width:70%; background-color:#f5f6f0;" id = "Card">
-                <img src="images/Back.png" style="width:100%">
-                <div class="w3-container w3-center">
-                    <button onclick="document.getElementById('id03').style.display='block'" class="button button1">Mas Informacion</button>
-                    <div id="id03" class="w3-modal">
-                        <div class="w3-modal-content">
-                            <div class="w3-container" >
-                                <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                                <p >
-                                    Título: original Back to the Future
-                                    Dirección: Robert Zemeckis 
-                                </p>
+                                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                <h4>Argumento:</h4>
+                                <p>La película de ciencia-ficción por excelencia de la historia del cine narra los diversos periodos de la historia de la humanidad, no sólo del pasado, sino también del futuro. Hace millones de años, antes de la aparición del "homo sapiens", unos primates descubren un monolito que los conduce a un estadio de inteligencia superior. Millones de años después, otro monolito, enterrado en una luna, despierta el interés de los científicos. Por último, durante una misión de la NASA, HAL 9000, una máquina dotada de inteligencia artificial, se encarga de controlar todos los sistemas de una nave espacial tripulada.</p>
+                                <ul style="color: black;">
+                                    <li>Título: 2001 - A space odyssey</li>
+                                    <li>Dirección: Stanley Kubrick</li>
+                                </ul>
                             </div>
                         </div>
                     </div>          
                 </div>
             </div>
-        </div>
-
-    </div>
-    <div class="w3-container">
-            <!-- Card Interstellar-->
-            <div class="card w3-third">
-                <div class="w3-card-4" style="width:70%;">
-                    <div class="w3-container" style="background-color: #36827F;" >
-                        <h3>Interstellar (2014)</h3>
-                    </div>
-                    <div class="w3-container">
-                        <p>Al ver que la vida en la Tierra está llegando a su fin, un grupo de exploradores dirigidos por el piloto Cooper (McConaughey) y la científica Amelia (Hathaway) emprende una misión que puede ser la más importante de la historia de la humanidad: viajar más allá de nuestra galaxia para descubrir algún planeta en otra que pueda garantizar el futuro de la raza humana.</p>
-                    </div>
-                    <footer class="w3-container" style="background-color: #36827F;">
-                        <button   onclick="document.getElementById('id04').style.display='block'" class="w3-button">Mas Informacion</button>
-                        <div id="id04" class="w3-modal">
-                            <div class="w3-modal-content">
-                                <div class="w3-container">
-                                    <span onclick="document.getElementById('id04').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                                    <p>
-                                        Titulo: Interstellar
-                                        Dirección: Christopher Nolan   
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </footer>
-                </div>
-            </div>
-            <!-- Card Grand-->
-            <div class = "card w3-third">
-                <div class="w3-card-4" style = "width:70%; background-color: #f1ede4;">
-                    <img src="images/Grand.jpg" style="width:100%">
-                    <div class="w3-container w3-center">
-                        <button onclick="document.getElementById('id05').style.display='block'" class="button button1">Mas Informacion</button>
-                        <div id="id05" class="w3-modal">
-                            <div class="w3-modal-content">
-                                <div class="w3-container" >
-                                    <span onclick="document.getElementById('id05').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                                    <p >
-                                        Título: The Grand Budapest Hotel
-                                        Dirección: Wes Anderson  
-                                    </p>
-                                </div>
-                            </div>
-                        </div>          
-                    </div>
-                </div>
-            </div>
-            <!--Card Inglorious bastards -->
-            <div class="card w3-third">
-                <div class="w3-card-4" style = "width:70%; background-color: #f1ede4;" id = "Card">
-                    <img src="images/Inglorious.jpg" style="width:100%">
+            <div class="card w3-card-4" style="background-color: #dcd9d2;" id = "Card"> <!-- Card 2001-->
+                <img src="images/2001.jpg" style="width:100%">
                 <div class="w3-container w3-center">
-                    <button onclick="document.getElementById('id06').style.display='block'" class="button button1">Mas Informacion</button>
-                    <div id="id06" class="w3-modal">
+                    <button onclick="document.getElementById('id01').style.display='block'" class="button button1">Mas Informacion</button>
+                    <div id="id01" class="w3-modal">
                         <div class="w3-modal-content">
-                            <div class="w3-container" >
-                                <span onclick="document.getElementById('id06').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                                <p >
-                                    Titulo: Inglorious bastards
-                                    Dirección:Quentin Tarantino 
-                                </p>
-                            </div>
-                        </div>
-                    </div>          
-                </div>
-                </div>
-           </div>
-    </div>
-    <div class="w3-container">
-        <!-- Alien-->
-        <div class="card w3-third">
-            <div class="w3-card-4 " style="width:70%; background-color:#f5f5ed;" id = "Card">
-                    <img src="images/Alien.jpg" style="width:100%">
-                <div class="w3-container w3-center">
-                    <button onclick="document.getElementById('id07').style.display='block'" class="button button1">Mas Informacion</button>
-                    <div id="id07" class="w3-modal">
-                        <div class="w3-modal-content">
-                            <div class="w3-container" >
-                                <span onclick="document.getElementById('id07').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                                <p >
-                                    Titulo: Alien
-                                    Dirección: Ridley Scott 
-                                </p>
+                            <div class="w3-container">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                <h4>Argumento:</h4>
+                                <p>La película de ciencia-ficción por excelencia de la historia del cine narra los diversos periodos de la historia de la humanidad, no sólo del pasado, sino también del futuro. Hace millones de años, antes de la aparición del "homo sapiens", unos primates descubren un monolito que los conduce a un estadio de inteligencia superior. Millones de años después, otro monolito, enterrado en una luna, despierta el interés de los científicos. Por último, durante una misión de la NASA, HAL 9000, una máquina dotada de inteligencia artificial, se encarga de controlar todos los sistemas de una nave espacial tripulada.</p>
+                                <ul style="color: black;">
+                                    <li>Título: 2001 - A space odyssey</li>
+                                    <li>Dirección: Stanley Kubrick</li>
+                                </ul>
                             </div>
                         </div>
                     </div>          
                 </div>
             </div>
-        </div>
-        <!-- Big Fish-->
-        <div class="card w3-third">
-            <div class="w3-card-4 " style="width:70%; background-color: #dcd9d2;" id = "Card">
-                <img src="images/Big.jpg" style="width:100%">
+            <div class="card w3-card-4" style="background-color: #dcd9d2;" id = "Card"> <!-- Card 2001-->
+                <img src="images/2001.jpg" style="width:100%">
                 <div class="w3-container w3-center">
-                    <button onclick="document.getElementById('id08').style.display='block'" class="button button1">Mas Informacion</button>
-                    <div id="id08" class="w3-modal">
+                    <button onclick="document.getElementById('id01').style.display='block'" class="button button1">Mas Informacion</button>
+                    <div id="id01" class="w3-modal">
                         <div class="w3-modal-content">
-                            <div class="w3-container" >
-                                <span onclick="document.getElementById('id08').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                                <p >
-                                    Titulo: Big Fish
-                                    Dirección: Tim Burton 
-                                </p>
+                            <div class="w3-container">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                <h4>Argumento:</h4>
+                                <p>La película de ciencia-ficción por excelencia de la historia del cine narra los diversos periodos de la historia de la humanidad, no sólo del pasado, sino también del futuro. Hace millones de años, antes de la aparición del "homo sapiens", unos primates descubren un monolito que los conduce a un estadio de inteligencia superior. Millones de años después, otro monolito, enterrado en una luna, despierta el interés de los científicos. Por último, durante una misión de la NASA, HAL 9000, una máquina dotada de inteligencia artificial, se encarga de controlar todos los sistemas de una nave espacial tripulada.</p>
+                                <ul style="color: black;">
+                                    <li>Título: 2001 - A space odyssey</li>
+                                    <li>Dirección: Stanley Kubrick</li>
+                                </ul>
                             </div>
                         </div>
                     </div>          
                 </div>
             </div>
-        </div>
-        <!-- Star Wars -->
-        <div class="card w3-third">
-            <div class="w3-card-4 " style="width:70%; background-color:#d8d7d2;" id = "Card">
-                <img src="images/Star.jpg" style="width:100%">
+            <div class="card w3-card-4" style="background-color: #dcd9d2;" id = "Card"> <!-- Card 2001-->
+                <img src="images/2001.jpg" style="width:100%">
                 <div class="w3-container w3-center">
-                    <button onclick="document.getElementById('id09').style.display='block'" class="button button1">Mas Informacion</button>
-                    <div id="id09" class="w3-modal">
+                    <button onclick="document.getElementById('id01').style.display='block'" class="button button1">Mas Informacion</button>
+                    <div id="id01" class="w3-modal">
                         <div class="w3-modal-content">
-                            <div class="w3-container" >
-                                <span onclick="document.getElementById('id09').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                                <p >
-                                    Título: Star Wars: Episode V - The empire strikes back
-                                    Dirección: Irvin Kershner
-                                </p>
+                            <div class="w3-container">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                <h4>Argumento:</h4>
+                                <p>La película de ciencia-ficción por excelencia de la historia del cine narra los diversos periodos de la historia de la humanidad, no sólo del pasado, sino también del futuro. Hace millones de años, antes de la aparición del "homo sapiens", unos primates descubren un monolito que los conduce a un estadio de inteligencia superior. Millones de años después, otro monolito, enterrado en una luna, despierta el interés de los científicos. Por último, durante una misión de la NASA, HAL 9000, una máquina dotada de inteligencia artificial, se encarga de controlar todos los sistemas de una nave espacial tripulada.</p>
+                                <ul style="color: black;">
+                                    <li>Título: 2001 - A space odyssey</li>
+                                    <li>Dirección: Stanley Kubrick</li>
+                                </ul>
                             </div>
                         </div>
                     </div>          
                 </div>
             </div>
-       </div>
-    </div>
+            <div class="card w3-card-4" style="background-color: #dcd9d2;" id = "Card"> <!-- Card 2001-->
+                <img src="images/2001.jpg" style="width:100%">
+                <div class="w3-container w3-center">
+                    <button onclick="document.getElementById('id01').style.display='block'" class="button button1">Mas Informacion</button>
+                    <div id="id01" class="w3-modal">
+                        <div class="w3-modal-content">
+                            <div class="w3-container">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                <h4>Argumento:</h4>
+                                <p>La película de ciencia-ficción por excelencia de la historia del cine narra los diversos periodos de la historia de la humanidad, no sólo del pasado, sino también del futuro. Hace millones de años, antes de la aparición del "homo sapiens", unos primates descubren un monolito que los conduce a un estadio de inteligencia superior. Millones de años después, otro monolito, enterrado en una luna, despierta el interés de los científicos. Por último, durante una misión de la NASA, HAL 9000, una máquina dotada de inteligencia artificial, se encarga de controlar todos los sistemas de una nave espacial tripulada.</p>
+                                <ul style="color: black;">
+                                    <li>Título: 2001 - A space odyssey</li>
+                                    <li>Dirección: Stanley Kubrick</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>          
+                </div>
+            </div>
+        </section>
     </main>
     <footer class = "footer"> 
         <li><h3>Co Santiago</h3></li>
         <li><h3>Consolati Juliana</h3></li>
         <li><h3>Gozzerino Franco</h3></li>
     </footer>
-
-   
 </body>
 </html>
