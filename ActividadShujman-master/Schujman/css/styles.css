@@ -10,6 +10,11 @@ body{
     font-family: 'Roboto', sans-serif; 
 }
 
+header {
+  display: flex;
+  justify-content: center;
+}
+
 .switch {
     position: relative;
     border-radius: 34px;
@@ -63,7 +68,7 @@ body{
     -ms-transform: translateX(26px);
     transform: translateX(26px);
   }
-
+  
 .button {
     color: #dcd9d2;
     border: 3px solid #95190C;
@@ -96,48 +101,65 @@ p{
     color: black;
 }
 
-.header-links {
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-links-1 {
     display: flex;
     align-items: center;
+    justify-content: left;
+}
+
+.header-links-2 {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-right: 20px;
+}
+
+header a{
+  text-align: center;
+}
+
+header button {
+  text-align: center;
 }
 
 .dark-mode {
     display: flex;
     align-items: right;
     color: black;
-    margin-left: 50px;
 }
 
 .dropdown {
     color: #3d3d3d;
-    margin-left: 50px;
 }
 
 main {
     margin-top: 100px;
     margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 header a:hover{
   color: #dcd9d2;
 }
 
-main{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
 .cards-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  border-radius: 5px;
 }
 
 .card {
   width: 30%;
   height: auto;
-  margin: 30px 10px;
+  margin: 30px 15px;
 }
 
 @media (max-width: 991px) {
@@ -147,6 +169,16 @@ main{
   }
   .card {
     width: 40%;
+  }
+  .footer h3{
+    font-size: 20px;
+  }
+  header a{
+    font-size: 13px;
+  }
+
+  header button {
+    font-size: 13px;
   }
 }
 
@@ -158,47 +190,20 @@ main{
     width: 100%;
     margin: 30px 0;
   }
+  .footer h3{
+    font-size: 15px;
+  }
+  .header h3{
+    font-size: 15px;
+  }
 }
-
-@media (max-width: 1066px) {
-    header {
-        font-size: 14px;
-    }
-    .dark-mode{
-        margin-left: 9px;
-    }
-    
-    .dropdown {
-        margin-left: 9px;
-    }
-}
-
-@media (max-width: 1023px) {
-    header {
-        font-size: 10px;
-    }
-    .dark-mode{
-        margin-left: 0;
-    }
-    
-    .dropdown {
-        margin-left: 0;
-    }
-}
-
-@media (max-width: 600px){
-    header {
-        font-size: 15px;
-    }
-}
-
-
 
 .footer {
+  text-align: center;
     position: fixed;
     left: 0;
     bottom: 0;
-    height: 50px;
+    height: 40px;
     width: 100%;
     background-color: rgba(31, 31, 31, 0.678);
     color: darkgrey;
@@ -207,20 +212,6 @@ main{
     justify-content: center;
     list-style: none;
     font-size: 20px;
-}
-
-@media (max-width: 767px){
-  footer li h3{
-    font-size: 17px;
-  }
-}
-
-@media (max-width: 479px) {
-  .footer li h3{
-    font-size: 13px;
-    display: block;
-    text-align: center;
-  }
 }
 
 .footer li{

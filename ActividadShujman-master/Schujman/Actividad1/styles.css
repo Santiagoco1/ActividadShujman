@@ -1,7 +1,54 @@
-.header-links {
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-links-1 {
     display: flex;
     align-items: center;
+    justify-content: left;
 }
+
+.header-links-2 {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-right: 20px;
+}
+
+header a{
+  text-align: center;
+}
+
+header button {
+  text-align: center;
+}
+
+.dark-mode {
+    display: flex;
+    align-items: right;
+    color: black;
+}
+
+.dropdown {
+    color: #3d3d3d;
+}
+
+@media (max-width: 991px) {
+  header a{
+    font-size: 13px;
+  }
+  header button {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px){
+  .header h3{
+    font-size: 15px;
+  }
+}
+
 a{
     color: #3d3d3d;
     text-decoration: none;
@@ -20,6 +67,60 @@ header a:hover{
   color: #dcd9d2;
 }
 
+  .switch {
+      position: relative;
+      border-radius: 34px;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+    
+    .switch input { 
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    
+    .slider {
+      position: absolute;
+      border-radius: 34px;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgb(167, 135, 10);
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    
+    .slider:before {
+      border-radius: 50%;
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: #FDFBFB;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    
+    input:checked + .slider {
+      background-color: #303030;
+    }
+    
+    input:focus + .slider {
+      box-shadow: 0 0 1px #303030;
+    }
+    
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+  
 .if-image {
  
     filter: grayscale(0);
@@ -70,7 +171,7 @@ header a:hover{
     position: fixed;
     left: 0;
     bottom: 0;
-    height: 50px;
+    height: 40px;
     width: 100%;
     background-color: rgba(31, 31, 31, 0.678);
     color: darkgrey;
@@ -79,6 +180,37 @@ header a:hover{
     justify-content: center;
     list-style: none;
     font-size: 20px;
+}
+@media (max-width: 1066px) {
+    header {
+        font-size: 14px;
+    }
+    .dark-mode{
+        margin-left: 9px;
+    }
+    
+    .dropdown {
+        margin-left: 9px;
+    }
+}
+
+@media (max-width: 1023px) {
+    header {
+        font-size: 10px;
+    }
+    .dark-mode{
+        margin-left: 0;
+    }
+    
+    .dropdown {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 600px){
+    header {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 767px){
