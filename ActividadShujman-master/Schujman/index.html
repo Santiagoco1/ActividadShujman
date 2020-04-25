@@ -8,18 +8,19 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel ="stylesheet" type = " text/css " href ="css/styles.css" media =" screen ">
-    <script src = "script.js"> </script> 
+    <link rel="Shortcut Icon" href="images/Caniche-Toy.jpg" type="image/x-icon"/>
+    <script src = "scripts.js"> </script> 
 </head>
 <body style="background-color: #f4f4ee;">
     <header class="w3-top" style = "background-color: #e4bf2e;">
         <div class="header-container" style="width: 1400px;">
             <div class="header-links-1 w3-bar">
                 <a href="http://www.ips.edu.ar" class="ips-logo w3-bar-item">
-                    <img src="images/IPS_Logo.png" alt="">
+                    <img vlass = "header-image" src="images/IPS_Logo.png" alt="">
                 </a>
-                <div class="dropdown w3-dropdown-hover">
-                    <button class="w3-button">Actividades <i class="fa fa-caret-down"></i></button>
-                    <div class="w3-dropdown-content w3-bar-block" style="background-color: #95190C; color: #dcd9d2;">
+                <div class="dropdown w3-dropdown-hover w3-hide-small">
+                    <button class="w3-button"style = "background-color: #e4bf2e;">Actividades <i class="fa fa-caret-down"></i></button>
+                    <div class="w3-dropdown-content w3-bar-block" style="background-color:#36827F; color: #dcd9d2;">
                         <a href="Actividad1/index.html" class="w3-bar-item w3-button">Actividad 1</a>
                         <a href="index.html" class="w3-bar-item w3-button ">Actividad 2</a> 
                     </div>
@@ -28,62 +29,72 @@
                 <a href="#" class="w3-hide-small w3-bar-item ">Iniciar Sesión</a>
                 <a href="#" class="w3-hide-small w3-bar-item ">Registrarme</a>
             </div>
-            <div class="header-links-2 w3-bar" style="width: 43%;">
+            <div class="header-links-2 w3-bar" style="width: 42%;">
                 <!--Aca empieza el menu (modo celular) -->
-                <div class="menu w3-dropdown-hover">
-                    <button class="w3-button w3-hide-large w3-hide-medium" style = "background-color: #e4bf2e; color: #3d3d3d;">Menu<i class="fa fa-caret-down"></i></button>
+                <div class="menu w3-dropdown-hover ">
+                    <button class="w3-button w3-hide-large w3-hide-medium" style = "background-color: #e4bf2e; color: #3d3d3d;">Menu <i class="fa fa-caret-down"></i></button>
                     <div class="w3-dropdown-content w3-bar-block" style="background-color: #36827F; color:#dcd9d2">
-                        <a href="#" class="w3-bar-item w3-button">Preguntas Frecuentes</a>
-                        <a href="#" class="w3-bar-item w3-button">Iniciar Sesión</a>
-                        <a href="#" class="w3-bar-item w3-button">Registrarme</a>
+                        <a href="Actividad1/index.html" class="w3-bar-item w3-button">Actividad 1</a>
+                        <a href="#Preguntas Frecuentes" class="w3-bar-item w3-button">Preguntas Frecuentes</a>
+                        <a href="#Iniciar Sesión" class="w3-bar-item w3-button">Iniciar Sesión</a>
+                        <a href="#Registrarme" class="w3-bar-item w3-button">Registrarme</a>
+                        <div class="dropdown w3-dropdown-hover">
+                            <button class="w3-button w3-hide-large w3-hide-medium" style ="font-size: 13px;background-color:#95190C; color: #dcd9d2">Links Útiles<i class="fa fa-caret-down"></i></button>
+                            <div class="w3-dropdown-content w3-bar-block" style="background-color: #36827F; color:#dcd9d2;">
+                                <a href="https://www.youtube.com/watch?v=U-JaUMu8FUQ" class="w3-bar-item w3-button">Manaties</a>
+                                <a href="https://www.youtube.com/watch?v=5qap5aO4i9A" class="w3-bar-item w3-button ">Lofi Radio</a>
+                                <a href="https://ar.pinterest.com/jconsolati/j/" class="w3-bar-item w3-button ">Pinterest</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Aca termina el menu-->
-                <div class="links-utiles dropdown w3-dropdown-hover">
-                    <button class="w3-button" style = "background-color: #e4bf2e;">Links Utiles <i class="fa fa-caret-down"></i></button>
-                    <div class="w3-dropdown-content w3-bar-block" style="background-color: #95190C; color:#dcd9d2">
-                        <a href="https://www.youtube.com/watch?v=U-JaUMu8FUQ" class="w3-bar-item w3-button">Manaties</a>
+                <div class="links-utiles dropdown w3-dropdown-hover w3-hide-small">
+                    <button class="w3-button" style = "background-color: #e4bf2e;">Links Útiles <i class="fa fa-caret-down"></i></button>
+                    <div class="w3-dropdown-content w3-bar-block" style="background-color: #36827F; color:#dcd9d2">
+                        <a href="https://www.youtube.com/watch?v=U-JaUMu8FUQ" class="w3-bar-item w3-button">Manatíes</a>
                         <a href="https://www.youtube.com/watch?v=5qap5aO4i9A" class="w3-bar-item w3-button ">Lofi Radio</a>
                         <a href="https://ar.pinterest.com/jconsolati/j/" class="w3-bar-item w3-button ">Pinterest</a>
                     </div>
                 </div>
                 <div class="dark-mode w3-hide-small">
-                    <button>Dark Mode</button>
+                    Dark Mode
+                    <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
                 </div>
-            </div>
+            </div> 
         </div>
     </header>
     <main>
     <!-- Card 2001-->
         <section class="cards-container w3-container" style="width: 1400px;">
             <div class="card w3-card-4" style="background-color: #dcd9d2;" id = "Card"> 
-                <img src="images/2001.jpg" style="width:100%">
-                <div class="w3-container w3-center">
-                    <button onclick="id=myBtn"  class="button button1">Mas Informacion</button>
-                    <div id="id01" class="w3-modal" >
-                        <div class="w3-modal-content">
-                            <div class="w3-container">
-                                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                                <h4>Argumento:</h4>
-                                <p>La película de ciencia-ficción por excelencia de la historia del cine narra los diversos periodos de la historia de la humanidad, no sólo del pasado, sino también del futuro. Hace millones de años, antes de la aparición del "homo sapiens", unos primates descubren un monolito que los conduce a un estadio de inteligencia superior. Millones de años después, otro monolito, enterrado en una luna, despierta el interés de los científicos. Por último, durante una misión de la NASA, HAL 9000, una máquina dotada de inteligencia artificial, se encarga de controlar todos los sistemas de una nave espacial tripulada.</p>
-                                <ul style="color: black;">
-                                    <li>Título: 2001 - A space odyssey</li>
-                                    <li>Dirección: Stanley Kubrick</li>
-                                </ul>
+                <img src="images/2001.jpg" style="width:100%;">
+                <div class="card-button-container w3-container w3-center">
+                     <button onclick="show_modal('id01')" class="button button1" style="height: 80%;">Mas Información</button>
+                        <div id="id01" class="w3-modal">
+                            <div class="w3-modal-content">
+                                <div class="w3-container">
+                                    <span onclick="hide_modal('id01')" class="w3-button w3-display-topright">&times;</span>
+                                        <h4>Argumento:</h4>
+                                        <p>La película de ciencia-ficción por excelencia de la historia del cine narra los diversos periodos de la historia de la humanidad, no sólo del pasado, sino también del futuro. Hace millones de años, antes de la aparición del "homo sapiens", unos primates descubren un monolito que los conduce a un estadio de inteligencia superior. Millones de años después, otro monolito, enterrado en una luna, despierta el interés de los científicos. Por último, durante una misión de la NASA, HAL 9000, una máquina dotada de inteligencia artificial, se encarga de controlar todos los sistemas de una nave espacial tripulada.</p>
+                                        <ul style="color: black;">
+                                            <li>Título: 2001 - A space odyssey</li>
+                                            <li>Dirección: Stanley Kubrick</li>
+                                        </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>          
                 </div>
             </div>
-            <!-- Card Star Wars-->
+            <!-- Card Star Wars -->
             <div class="card w3-card-4" style="background-color: #dcd9d2;" id = "Card"> 
-                <img src="images/Star.jpg" style="width:100%">
-                <div class="w3-container w3-center">
-                    <button onclick="document.body.style.overflow = 'hidden';document.getElementById('id02').style.display='block'  " class="button button1">Mas Informacion</button>
+                <img src="images/Star.jpg" style="width:100%; height: 90%;">
+                <div class="card-button-container w3-container w3-center">
+                    <button onclick="show_modal('id02')"   class="button button1">Mas Información</button>
                     <div id="id02" class="w3-modal">
                         <div class="w3-modal-content">
                             <div class="w3-container">
-                                <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                <span onclick="hide_modal('id02')" class="w3-button w3-display-topright">&times;</span>
                                 <h4>Argumento:</h4>
                                 <p> Las luchas de la Alianza Rebelde contra el Imperio Galáctico continuan. Durante la película, Han Solo, Chewbacca y la Princesa Leia Organa están siendo perseguidos a través del espacio por Darth Vader y sus fuerzas de elite. Mientras tanto, Luke Skywalker comienza su formación como Jedi con Yoda, después de una instrucción del espíritu de Obi-Wan Kenobi. En un emotivo y casi fatal enfrentamiento con Vader, Luke se presenta con una terrible revelación y debe afrontar su destino. </p>
                                 <ul style="color: black;">
@@ -95,55 +106,15 @@
                     </div>          
                 </div>
             </div>
-            <!-- Card Alien-->
-            <div class="card w3-card-4" style="background-color: #f3f3f3;" id = "Card"> 
-                <img src="images/Alien.jpg" style="width:100%">
-                <div class="w3-container w3-center">
-                    <button onclick="document.getElementById('id03').style.display='block'" class="button button1">Mas Informacion</button>
-                    <div id="id03" class="w3-modal" >
-                        <div class="w3-modal-content">
-                            <div class="w3-container">
-                                <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                                <h4>Argumento:</h4>
-                                <p>De regreso a la Tierra, la nave de carga Nostromo interrumpe su viaje y despierta a sus siete tripulantes. El ordenador central, MADRE, ha detectado la misteriosa transmisión de una forma de vida desconocida, procedente de un planeta cercano aparentemente deshabitado. La nave se dirige entonces al extraño planeta para investigar el origen de la comunicación.</p>
-                                <ul style="color: black;">
-                                    <li>Título: Alien</li>
-                                    <li>Dirección: Ridley Scott</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>          
-                </div>
-            </div>
-            <!-- Card Inglorious-->
-            <div class="card w3-card-4" style="background-color: #f1ede4;" id = "Card"> 
-                <img src="images/Inglorious.jpg" style="width:100%">
-                <div class="w3-container w3-center">
-                    <button onclick="document.getElementById('id04').style.display='block'" class="button button1">Mas Informacion</button>
-                    <div id="id04" class="w3-modal">
-                        <div class="w3-modal-content">
-                            <div class="w3-container">
-                                <span onclick="document.getElementById('id04').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                                <h4>Argumento:</h4>
-                                <p>Segunda Guerra Mundial. En la Francia ocupada por los alemanes, Shosanna Dreyfus presencia la ejecución de su familia. Después de huir a París, adopta una nueva identidad como propietaria de un cine. En otro lugar de Europa, el teniente Aldo Raine adiestra a un grupo de soldados judíos (The Basterds) para atacar objetivos concretos. El destino quiere que todos se encuentren bajo la marquesina de un cine donde Shosanna espera para vengarse. </p>
-                                <ul style="color: black;">
-                                    <li>Título: Inglourious Basterds.</li>
-                                    <li>Dirección: Quentin Tarantino</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>          
-                </div>
-            </div>
-            <!-- Card Big Fish-->
+            <!-- Card Big Fish -->
             <div class="card w3-card-4" style="background-color: #dcd9d2;" id = "Card"> 
-                <img src="images/Big.jpg" style="width:100%">
-                <div class="w3-container w3-center">
-                    <button onclick="document.getElementById('id05').style.display='block'" class="button button1">Mas Informacion</button>
+                <img src="images/Big.jpg" style="width:100%; height: 90%;">
+                <div class="card-button-container w3-container w3-center">
+                    <button onclick="show_modal('id05')" class="button button1">Mas Información</button>
                     <div id="id05" class="w3-modal">
                         <div class="w3-modal-content">
                             <div class="w3-container">
-                                <span onclick="document.getElementById('id05').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                <span onclick="hide_modal('id05')" class="w3-button w3-display-topright">&times;</span>
                                 <h4>Argumento:</h4>
                                 <p>William Bloom no tiene muy buena relación con su padre, pero tras enterarse de que padece una enfermedad terminal, regresa a su hogar para estar a su lado en sus últimos momentos. Una vez más, William se verá obligado a escucharlo mientras cuenta las interminables historias de su juventud. Pero, en esta ocasión, tratará de averiguar cosas que le permitan conocer mejor a su padre, aunque para ello tendrá que separar claramente realidad y fantasía, elementos que aparecen siempre mezclados en los relatos de su padre. </p>
                                 <ul style="color: black;">
@@ -155,15 +126,55 @@
                     </div>          
                 </div>
             </div>
-            <!-- Card Hotel-->
+            <!-- Card Inglorious -->
+            <div class="card w3-card-4" style="background-color: #f1ede4;" id = "Card"> 
+                <img src="images/Inglorious.jpg" style="width:100%; height: 90%;">
+                <div class="card-button-container w3-container w3-center">
+                    <button onclick="show_modal('id04')" class="button button1">Mas Información</button>
+                    <div id="id04" class="w3-modal">
+                        <div class="w3-modal-content">
+                            <div class="w3-container">
+                                <span onclick="hide_modal('id04')" class="w3-button w3-display-topright">&times;</span>
+                                <h4>Argumento:</h4>
+                                <p>Segunda Guerra Mundial. En la Francia ocupada por los alemanes, Shosanna Dreyfus presencia la ejecución de su familia. Después de huir a París, adopta una nueva identidad como propietaria de un cine. En otro lugar de Europa, el teniente Aldo Raine adiestra a un grupo de soldados judíos (The Basterds) para atacar objetivos concretos. El destino quiere que todos se encuentren bajo la marquesina de un cine donde Shosanna espera para vengarse. </p>
+                                <ul style="color: black;">
+                                    <li>Título: Inglourious Basterds.</li>
+                                    <li>Dirección: Quentin Tarantino</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>          
+                </div>
+            </div>
+            <!-- Card Alien -->
+            <div class="card w3-card-4" style="background-color: #f3f3f3;" id = "Card"> 
+                <img src="images/Alien.jpg" style="width:100%; height: 90%;">
+                <div class="card-button-container w3-container w3-center">
+                    <button onclick="show_modal('id03')" class="button button1">Mas Información</button>
+                    <div id="id03" class="w3-modal" >
+                        <div class="w3-modal-content">
+                            <div class="w3-container">
+                                <span onclick="hide_modal('id03')" class="w3-button w3-display-topright">&times;</span>
+                                <h4>Argumento:</h4>
+                                <p>De regreso a la Tierra, la nave de carga Nostromo interrumpe su viaje y despierta a sus siete tripulantes. El ordenador central, MADRE, ha detectado la misteriosa transmisión de una forma de vida desconocida, procedente de un planeta cercano aparentemente deshabitado. La nave se dirige entonces al extraño planeta para investigar el origen de la comunicación.</p>
+                                <ul style="color: black;">
+                                    <li>Título: Alien</li>
+                                    <li>Dirección: Ridley Scott</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>          
+                </div>
+            </div>
+            <!-- Card Hotel -->
             <div class="card w3-card-4" style="background-color:#f5f5ed;" id = "Card"> 
-                <img src="images/Grand.jpg" style="width:100%">
-                <div class="w3-container w3-center">
-                    <button onclick="document.getElementById('id06').style.display='block'" class="button button1">Mas Informacion</button>
+                <img src="images/Grand.jpg" style="width:100%; height: 90%;">
+                <div class="card-button-container w3-container w3-center">
+                    <button onclick="show_modal('id06')" class="button button1">Mas Información</button>
                     <div id="id06" class="w3-modal">
                         <div class="w3-modal-content">
                             <div class="w3-container">
-                                <span onclick="document.getElementById('id06').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                <span onclick="hide_modal('id06')" class="w3-button w3-display-topright">&times;</span>
                                 <h4>Argumento:</h4>
                                 <p>Gustave H., un legendario conserje de un famoso hotel europeo de entreguerras, entabla amistad con Zero Moustafa, un joven empleado al que convierte en su protegido. La historia trata sobre el robo y la recuperación de una pintura renacentista de valor incalculable y sobre la batalla que enfrenta a los miembros de una familia por una inmensa fortuna. Como telón de fondo, los levantamientos que transformaron Europa durante la primera mitad del siglo XX.</p>
                                 <ul style="color: black;">
@@ -175,15 +186,15 @@
                     </div>          
                 </div>
             </div>
-            <!--Card Back-->
+            <!-- Card Back -->
             <div class="card w3-card-4" style="background-color:  #f5f6f0" id = "Card"> 
-                <img src="images/Back.png" style="width:100%">
-                <div class="w3-container w3-center">
-                    <button onclick="document.getElementById('id07').style.display='block'" class="button button1">Mas Informacion</button>
+                <img src="images/Back.png" style="width:100%; height: 90%;">
+                <div class="card-button-container w3-container w3-center">
+                    <button onclick="show_modal('id07')" class="button button1">Mas Información</button>
                     <div id="id07" class="w3-modal">
                         <div class="w3-modal-content">
                             <div class="w3-container">
-                                <span onclick="document.getElementById('id07').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                <span onclick="hide_modal('id07')" class="w3-button w3-display-topright">&times;</span>
                                 <h4>Argumento:</h4>
                                 <p>El adolescente Marty McFly es amigo de Doc, un científico al que todos toman por loco. Cuando Doc crea una máquina para viajar en el tiempo, un error fortuito hace que Marty llegue a 1955, año en el que sus futuros padres aún no se habían conocido. Después de impedir su primer encuentro, deberá conseguir que se conozcan y se casen, de lo contrario, su existencia no sería posible. </p>
                                 <ul style="color: black;">
@@ -195,15 +206,15 @@
                     </div>          
                 </div>
             </div>
-            <!-- Card Godfather-->
+            <!-- Card Godfather -->
             <div class="card w3-card-4" style="background-color:#e7e5e6" id = "Card"> 
-                <img src="images/WhatsApp Image 2020-04-24 at 4.31.18 PM.jpeg" style="width:100%">
-                <div class="w3-container w3-center">
-                    <button onclick="document.getElementById('id08').style.display='block'" class="button button1">Mas Informacion</button>
+                <img src="images/Godfather.jpeg" style="width:100%; height: 90%;">
+                <div class="card-button-container w3-container w3-center">
+                    <button onclick="show_modal('id08')" class="button button1">Mas Información</button>
                     <div id="id08" class="w3-modal">
                         <div class="w3-modal-content">
                             <div class="w3-container">
-                                <span onclick="document.getElementById('id08').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                <span onclick="hide_modal('id08')" class="w3-button w3-display-topright">&times;</span>
                                 <h4>Argumento:</h4>
                                 <p>América, años 40. Don Vito Corleone es el respetado y temido jefe de una de las cinco familias de la mafia de Nueva York. Tiene cuatro hijos: Connie, el impulsivo Sonny, el pusilánime Fredo y Michael, que no quiere saber nada de los negocios de su padre. Cuando Corleone, en contra de los consejos de 'Il consigliere' Tom Hagen, se niega a participar en el negocio de las drogas, el jefe de otra banda ordena su asesinato. Empieza entonces una violenta y cruenta guerra entre las familias mafiosas.</p>
                                 <ul style="color: black;">
@@ -215,15 +226,15 @@
                     </div>          
                 </div>
             </div>
-            <!-- Card La La Land-->
+            <!-- Card La La Land -->
             <div class="card w3-card-4" style="background-color: #f5f8f1" id = "Card"> 
-                <img src="images/WhatsApp Image 2020-04-24 at 4.31.19 PM(1).jpeg" style="width:100%">
-                <div class="w3-container w3-center">
-                    <button onclick="document.getElementById('id09').style.display='block'" class="button button1">Mas Informacion</button>
+                <img src="images/Land.jpeg" style="width:100%; height: 90%;">
+                <div class="card-button-container w3-container w3-center">
+                    <button onclick="show_modal('id09')" class="button button1">Mas Información</button>
                     <div id="id09" class="w3-modal">
                         <div class="w3-modal-content">
                             <div class="w3-container">
-                                <span onclick="document.getElementById('id09').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                <span onclick="hide_modal('id09')" class="w3-button w3-display-topright">&times;</span>
                                 <h4>Argumento:</h4>
                                 <p>Mia, una joven aspirante a actriz que trabaja como camarera mientras acude a castings, y Sebastian, un pianista de jazz que se gana la vida tocando en sórdidos tugurios, se enamoran, pero su gran ambición por llegar a la cima en sus carreras artísticas amenaza con separarlos.</p>
                                 <ul style="color: black;">
@@ -235,15 +246,15 @@
                     </div>          
                 </div>
             </div>
-            <!-- Card Her-->
+            <!-- Card Her -->
             <div class="card w3-card-4" style="background-color: #f5f5eb" id = "Card"> 
-                <img src="images/WhatsApp Image 2020-04-24 at 4.31.19 PM(2).jpeg" style="width:100%">
-                <div class="w3-container w3-center">
-                    <button onclick="document.getElementById('id10').style.display='block'" class="button button1">Mas Informacion</button>
+                <img src="images/Her.jpeg" style="width:100%; height: 90%;">
+                <div class="card-button-container w3-container w3-center">
+                    <button onclick="show_modal('id10')" class="button button1">Mas Información</button>
                     <div id="id10" class="w3-modal">
                         <div class="w3-modal-content">
                             <div class="w3-container">
-                                <span onclick="document.getElementById('id10').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                <span onclick="hide_modal('id10')" class="w3-button w3-display-topright">&times;</span>
                                 <h4>Argumento:</h4>
                                 <p>En un futuro cercano, Theodore, un hombre solitario a punto de divorciarse que trabaja en una empresa como escritor de cartas para terceras personas, compra un día un nuevo sistema operativo basado en el modelo de Inteligencia Artificial, diseñado para satisfacer todas las necesidades del usuario. Para su sorpresa, se crea una relación romántica entre él y Samantha, la voz femenina de ese sistema operativo.</p>
                                 <ul style="color: black;">
@@ -255,15 +266,15 @@
                     </div>          
                 </div>
             </div>
-            <!-- Card American Beauty-->
+            <!-- Card American Beauty -->
             <div class="card w3-card-4" style="background-color: #f4f5ef" id = "Card"> 
-                <img src="images/WhatsApp Image 2020-04-24 at 4.31.19 PM.jpeg" style="width:100%">
-                <div class="w3-container w3-center">
-                    <button onclick="document.getElementById('id11').style.display='block'" class="button button1">Mas Informacion</button>
+                <img src="images/American.jpeg" style="width:100%; height: 90%;">
+                <div class="card-button-container w3-container w3-center">
+                    <button onclick="show_modal('id11')" class="button button1">Mas Información</button>
                     <div id="id11" class="w3-modal">
                         <div class="w3-modal-content">
                             <div class="w3-container">
-                                <span onclick="document.getElementById('id11').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                <span onclick="hide_modal('id11')" class="w3-button w3-display-topright">&times;</span>
                                 <h4>Argumento:</h4>
                                 <p>Lester Burnham, un cuarentón en crisis, cansado de su trabajo y de su mujer Carolyn, despierta de su letargo cuando conoce a la atractiva amiga de su hija, a la que intentará impresionar a toda costa. </p>
                                 <ul style="color: black;">
@@ -275,15 +286,15 @@
                     </div>          
                 </div>
             </div>
-            <!-- Card Forest gump-->
+            <!-- Card Forest gump -->
             <div class="card w3-card-4" style="background-color:#f5f6f0;" id = "Card"> 
-                <img src="images/WhatsApp Image 2020-04-24 at 4.34.01 PM.jpeg" style="width:100%">
-                <div class="w3-container w3-center" >
-                    <button onclick="document.getElementById('id12').style.display='block'" class="button button1">Mas Informacion</button>
+                <img src="images/Gump.jpeg" style="width:100%; height: 90%;">
+                <div class="card-button-container w3-container w3-center" >
+                    <button onclick="show_modal('id12')" class="button button1">Mas Información</button>
                     <div id="id12" class="w3-modal">
                         <div class="w3-modal-content">
                             <div class="w3-container">
-                                <span onclick="document.getElementById('id12').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                <span onclick="hide_modal('id12')" class="w3-button w3-display-topright">&times;</span>
                                 <h4>Argumento:</h4>
                                 <p>Forrest Gump es un chico con deficiencias mentales no muy profundas y con alguna incapacidad motora que, a pesar de todo, llegará a convertirse, entre otras cosas, en un héroe durante la Guerra del Vietnam. Su persistencia y bondad le llevarán a conseguir una gran fortuna, ser objeto del clamor popular y a codearse con las más altas esferas sociales y políticas del país. Siempre sin olvidar a Jenny, su gran amor desde que era niño.</p>
                                 <ul style="color: black;">
@@ -296,26 +307,6 @@
                 </div>
             </div>
         </section>
-    <script>
-        // Get the modal
-var modal = document.getElementById("id01");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-    </script>
     </main>
     <footer class = "footer"> 
         <li><h3>Co Santiago</h3></li>
