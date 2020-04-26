@@ -1,0 +1,269 @@
+
+
+    
+  
+/* Color Theme Swatches in Hex */
+.pagina-1-hex { color: #000000; }
+.pagina-2-hex { color: #E6BC0E; }
+.pagina-3-hex { color: #36827F; }
+.pagina-4-hex { color: #FDFBFB; }
+.pagina-5-hex { color: #95190C; }
+
+header {
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+header a:hover{
+color: #dcd9d2;
+}
+
+.header-container {
+display: flex;
+justify-content: space-between;
+}
+
+.header-links-1 {
+display: flex;
+align-items: center;
+justify-content: left;
+}
+
+.header-image {
+margin-left: 0;
+}
+
+.header-links-2 {
+display: flex;
+align-items: center;
+justify-content: right;
+margin-right: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 50px;
+	height: 25px;
+	background: rgb(187, 152, 10);
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 15px;
+	height: 15px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background:#131313;
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 55px;
+}
+
+.button {
+    color: #dcd9d2;
+    border: 3px solid #95190C;
+    border-radius: 8px;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 15px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color: #95190c;
+    color: white;   
+  }
+
+  .button1:hover {
+    background-color: #dcd9d2; 
+    color: black; 
+    border: 3px solid #95190C;
+  }
+
+a{
+    color: #3d3d3d;
+    text-decoration: none;
+}
+
+p{
+    color: black;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-links-1 {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.header-image {
+  margin-left: 0;
+}
+
+.header-links-2 {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-right: 20px;
+}
+
+header a{
+  text-align: center;
+}
+
+header button {
+  text-align: center;
+}
+
+.dark-mode {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    color: #3d3d3d;
+}
+
+.dropdown {
+    color: #3d3d3d;
+}
+
+header a:hover{
+  color: #dcd9d2;
+}  
+
+
+body {
+  margin-top: 100px;
+}
+
+.tabla_grupo {
+    border: 0.6em solid #424242;
+    border-collapse: collapse;
+    background-color: #778899;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+    width: 75%;
+}
+
+.tabla_grupo th{
+    border: 1px solid #D3D3D3;
+    color: #FFFFFF;
+    font-size: 2em;
+}
+
+.tabla_grupo td{
+    border: 1px solid #D3D3D3;
+    color: #F8F8FF ;
+    font-size: 1.5em;
+}
+
+.table_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.4em;
+
+    
+  }
+ img.blancoYnegro {
+   
+    filter: grayscale(0);
+     
+    -webkit-filter: grayscale(0);
+     
+    }
+  
+    
+img.blancoYnegro:hover {
+   
+  filter: grayscale(100%);
+   
+  -webkit-filter: grayscale(100%);
+   
+  }
+.footer {
+  text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(31, 31, 31, 0.678);
+    color: darkgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-size: 20px;
+}
+
+.footer li{
+    margin: 0 20px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;   
+}
+
+@media (max-width: 991px) {
+  header a{
+    font-size: 13px;
+  }
+  header button {
+    font-size: 13px;
+  }
+  .dark-mode{
+    font-size: 13px;
+    text-align: center;
+  }
+  .footer h3{
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px){
+  header h3{
+    font-size: 20px;
+  }
+  header button{
+    font-size: 20px;
+  }
+  .footer h3{
+    font-size: 15px;
+  }
+}
